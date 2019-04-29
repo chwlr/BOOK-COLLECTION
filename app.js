@@ -51,7 +51,7 @@ class UI {
       e.target.parentElement.parentElement.parentElement.remove()
     }
   }
-
+  
 }
 
 // Event listener when user adding a book

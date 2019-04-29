@@ -12,6 +12,9 @@
 
   <title>Book Collection</title>
   <style>
+    #loading, #results {
+      display: none;
+    }
     .container{
       background-color: rgb(255, 255, 255);
       max-width: 1000px;
@@ -52,6 +55,10 @@
     </div>
     <button type="submit" class="btn btn-success" id="add-book">Add Book</button>
   </form>
+  <!-- LOADER HERE -->
+  <div class="text-center" id="loading">
+    <img src="./asset/loading.gif" alt="loader">
+  </div>
 
   <table class="table table-striped bg-light rounded" style="margin-top: 50px;">
     <thead>
@@ -60,6 +67,7 @@
         <th scope="col">Title</th>
         <th scope="col">Author</th>
         <th scope="col">Book ID</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody class="book-list">
@@ -88,6 +96,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-  <script src="app.js"></script>
+  <script src="app2.js"></script>
 </body>
 </html>
